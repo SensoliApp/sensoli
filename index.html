@@ -16,61 +16,112 @@
 
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background-color: #191D21;
         color: #D7DEE8;
         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded",
-             "Helvetica Neue", sans-serif;
-        line-height: 1.6;
+                     "Helvetica Neue", sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+        letter-spacing: 0.1px;
     }
 
     .container {
         max-width: 1300px;
-        margin: 300px auto;
-        padding: 40px;
+        margin: 50px auto;
+        padding: 50px 60px;
         background-color: #1F2429;
         border: 1px solid rgba(255, 255, 255, 35);
-        border-radius: 6px;
+        border-radius: 8px;
+        box-sizing: border-box;
     }
 
     h1 {
+        margin: 0 0 8px 0;
         color: #F2F6FB;
-        margin-bottom: 8px;
+        font-size: 34px;
+        font-weight: 500;
+        letter-spacing: -0.6px;
     }
 
     h2 {
+        margin: 42px 0 12px 0;
         color: #8FC0ED;
-        margin-top: 35px;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
     }
 
     .subtitle {
+        margin-bottom: 36px;
         color: #AEB7C2;
-        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 400;
     }
 
-    p, li {
+    p {
+        max-width: 1050px;
+        margin: 0 0 18px 0;
+        color: #D7DEE8;
+    }
+
+    ul {
+        max-width: 1050px;
+        margin: 12px 0 24px 0;
+        padding-left: 24px;
+    }
+
+    li {
+        margin-bottom: 6px;
         color: #D7DEE8;
     }
 
     a {
         color: #8FC0ED;
+        text-decoration: none;
+        transition: color 0.2s ease;
     }
 
     a:hover {
         color: #A7D0F5;
+        text-decoration: underline;
     }
 
     .contact {
-        margin-top: 40px;
-        padding: 20px;
+        margin-top: 48px;
+        padding: 24px 26px;
         background-color: #242A30;
         border: 1px solid rgba(90, 150, 220, 24);
-        border-radius: 6px;
+        border-radius: 8px;
+    }
+
+    .contact h2 {
+        margin-top: 0;
     }
 
     .footer {
-        margin-top: 40px;
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 18);
         color: #747C86;
+        font-size: 13px;
         text-align: center;
+    }
+
+    @media (max-width: 700px) {
+        .container {
+            margin: 20px;
+            padding: 30px 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 19px;
+        }
     }
 </style>
 
