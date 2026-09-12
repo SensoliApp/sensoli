@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,6 +93,22 @@
             text-decoration: underline;
         }
 
+        .download {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 18px;
+            background-color: #242A30;
+            border: 1px solid rgba(90, 150, 220, 24);
+            border-radius: 8px;
+            color: #8FC0ED;
+            text-decoration: none;
+        }
+
+        .download:hover {
+            color: #A7D0F5;
+            text-decoration: none;
+        }
+
         .contact {
             margin-top: 48px;
             padding: 24px 26px;
@@ -141,10 +158,20 @@
         <div class="logo">
             <img src="SensoliLogo.png" alt="Sensoli logo">
         </div>
-<a href="index.html">Privacy Policy</a>
-    <h1>
-        Sensoli - Your time, for you.
-    </h1>
+
+        <a href="index.html">Privacy Policy</a>
+
+        <h1>
+            Sensoli - Your time, for you.
+        </h1>
+
+        <p class="subtitle">
+            Sensoli 1.1.5 — macOS application for Apple Silicon.
+        </p>
+
+        <a class="download" href="documentation.pdf" download>
+            Download documentation
+        </a>
 
         <p>
             Sensoli is a free productivity management application based on the time spent
@@ -197,3 +224,6 @@
 </body>
 
 </html>
+```
+
+Il suffit ensuite de placer **`documentation.pdf` dans le même dossier que cette page HTML** pour que le bouton fonctionne correctement.
